@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NÉ-BOOK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <img src="img/Logo.png" alt="Logo" class="logo">
+
+      <!-- Menu Principal -->
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Destaque</a></li>
+          <li><a href="#categories">Categorias</a></li>
+          <li><a href="#subscription">Assinaturas</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Biblioteca</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><button class="login-btn">Entrar</button></li>
+        </ul>
+      </nav>
+
+      <!-- Botão do Carrinho -->
+      <button class="cart-btn">
+        <i class="fas fa-shopping-cart" style="font-size: 25px; color: #3366cc;"></i>
+      </button>
+
+      <!-- Botão do Menu Hamburguer (para mobile) -->
+      <button class="menu-hamburguer" aria-label="Menu" aria-expanded="false">
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+        <span class="hamburguer-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner Principal -->
+  <div class="banner" id="home">
+    <div class="container">
+      <h1>Descubra novos conhecimentos</h1>
+      <p>Milhares de ebooks disponíveis para expandir seus horizontes. Aprenda com os melhores autores.</p>
+      <button class="banner-btn">Explorar Livros</button>
+    </div>
+  </div>
+
+  <!-- Livros em Destaque -->
+  <section id="featured">
+    <div class="container">
+      <h2 class="section-title">Ebooks em Destaque</h2>
+      <div class="carousel-container">
+        <button class="carousel-control prev-btn">❮</button>
+        <div class="carousel">
+          <!-- Os itens do carrossel serão inseridos aqui pelo JavaScript -->
+        </div>
+        <button class="carousel-control next-btn">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2 class="section-title">Categorias</h2>
+      <div class="categories-grid">
+        <div class="category-card"><div class="category-icon">💻</div><h3 class="category-name">Programação</h3></div>
+        <div class="category-card"><div class="category-icon">🎨</div><h3 class="category-name">Design</h3></div>
+        <div class="category-card"><div class="category-icon">🤖</div><h3 class="category-name">Inteligência Artificial</h3></div>
+        <div class="category-card"><div class="category-icon">📊</div><h3 class="category-name">Marketing</h3></div>
+        <div class="category-card"><div class="category-icon">📱</div><h3 class="category-name">Desenvolvimento Mobile</h3></div>
+        <div class="category-card"><div class="category-icon">📊</div><h3 class="category-name">Data Science</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos de Assinatura -->
+  <section id="subscription" class="subscription">
+    <div class="container">
+      <h2 class="section-title">Planos de Assinatura</h2>
+      <div class="plans-container">
+        <div class="plan-card">
+          <h3 class="plan-title">Básico</h3>
+          <div class="plan-price">R$ 19,90 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Acesso a 10 ebooks por mês</li>
+            <li>Leitura online</li>
+            <li>Suporte básico</li>
+          </ul>
+          <button class="plan-btn">Assinar Agora</button>
+        </div>
+
+        <div class="plan-card popular-plan">
+          <div class="popular-badge">Mais Popular</div>
+          <h3 class="plan-title">Premium</h3>
+          <div class="plan-price">R$ 39,90 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Acesso ilimitado a ebooks</li>
+            <li>Download em PDF e EPUB</li>
+            <li>Audiobooks inclusos</li>
+            <li>Suporte prioritário</li>
+          </ul>
+          <button class="plan-btn">Assinar Agora</button>
+        </div>
+
+        <div class="plan-card">
+          <h3 class="plan-title">Familiar</h3>
+          <div class="plan-price">R$ 59,90 <span>/mês</span></div>
+          <ul class="plan-features">
+            <li>Até 5 usuários</li>
+            <li>Acesso ilimitado a ebooks</li>
+            <li>Download em todos formatos</li>
+            <li>Suporte VIP</li>
+          </ul>
+          <button class="plan-btn">Assinar Agora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>E-BookStore</h3>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ajuda</h3>
+          <ul class="footer-links">
+            <li><a href="#">Perguntas Frequentes</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Categorias</h3>
+          <ul class="footer-links">
+            <li><a href="#">Programação</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Negócios</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Redes Sociais</h3>
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 E-BookStore. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
